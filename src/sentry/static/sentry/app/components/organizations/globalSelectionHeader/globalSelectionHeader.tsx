@@ -348,7 +348,7 @@ class GlobalSelectionHeader extends React.Component<Props, State> {
     // project into the store (if project is not in URL params), otherwise
     // there will be weird behavior in this component since it just picks a project
     if (!hasMultipleProjectFeature && forceProject && !prevProps.forceProject) {
-      // Make sure a project isn't specified in query param already, since it should take precendence
+      // Make sure a project isn't specified in query param already, since it should take precedence
       const {project} = getStateFromQuery(location.query);
       if (!project) {
         singleProjectIsEnforced = true;
@@ -403,7 +403,7 @@ class GlobalSelectionHeader extends React.Component<Props, State> {
     }
 
     if (forceProject) {
-      // this takes precendence over the other options
+      // this takes precedence over the other options
       newProject = [getProjectIdFromProject(forceProject)];
     } else if (requestedProjects && requestedProjects.length > 0) {
       // If there is a list of projects from URL params, select first project from that list
