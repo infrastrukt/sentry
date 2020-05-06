@@ -263,7 +263,7 @@ describe('OrganizationContext', function() {
     expect(getOrgMock).toHaveBeenCalledTimes(1);
   });
 
-  it('calls `GlobalSelectionStore.loadInitialData` with `skipLastUsed` option when loadigno group details route', async function() {
+  it('calls `GlobalSelectionStore.loadInitialData` with `skipLastUsed` option when loading group details route', async function() {
     expect(GlobalSelectionStore.loadInitialData).not.toHaveBeenCalled();
     wrapper = createWrapper({
       routes: [{path: '/organizations/:orgId/issues/:groupId/'}],
